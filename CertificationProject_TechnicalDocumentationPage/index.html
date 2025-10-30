@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav id=navbar>
+        <header>C# Documentation</header>
+        <ul>
+            <li><a class=nav-link href=#Introduction>Introduction</a></li>
+            <li><a class=nav-link href=#C#_Syntax>C# Syntax</a></li>
+            <li><a class=nav-link href=#C#_Comments>C# Comments</a></li>
+            <li><a class=nav-link href=#C#_Variables>C# Variables</a></li>
+            <li><a class=nav-link href=#C#_Output>C# Output</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction
+            </header>
+            <p>
+                C# is pronounced "C-Sharp".
+            </p>
+            <p>
+                It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.
+            </p>
+            <p>
+                C# has roots from the C family, and the language is close to other popular languages like C++ and Java.
+            </p>
+            <p>
+                The first version was released in year 2002. The latest version, C# 13, was released in November 2024.
+            </p>
+            <p>
+                C# is used for:
+            <ul>
+                <li>Mobile applications</li>
+                <li>Desktop applications</li>
+                <li>Web applications</li>
+                <li>Web services</li>
+                <li>Web sites</li>
+
+                <li>Games</li>
+                <li>Database applications</li>
+                <li>And much, much more!</li>
+
+            </ul>
+            </p>
+        </section>
+        <section class="main-section" id=C#_Syntax>
+            <header>C# Syntax
+            </header>
+            <p>The code looks something like this:</p>
+            <pre><code>
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");    
+    }
+  }
+}
+      </code></pre>
+        </section>
+        <section class="main-section" id=C#_Comments>
+            <header>C# Comments
+            </header>
+            <p>
+                Comments can be used to explain C# code, and to make it more readable. It can also be used to prevent
+                execution when testing alternative code.
+            </p>
+            <ul>
+                <li>Single-line comments start with two forward slashes (//).
+                    <pre><code>
+  // This is a comment
+Console.WriteLine("Hello World!");</code></pre>
+                </li>
+                <li>Multi-line comments start with /* and ends with */.
+                    <pre><code>
+/* The code below will print the words Hello World
+to the screen, and it is amazing */
+Console.WriteLine("Hello World!"); </code></pre>
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id=C#_Variables>
+            <header>C# Variables
+            </header>
+            <p>
+                Variables are containers for storing data values.</p>
+            <p>In C#, there are different types of variables (defined with different keywords), for example:</p>
+            <ul>
+                <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                <li>double - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+                </li>
+                <li>string - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+                <li>bool - stores values with two states: true or false</li>
+            </ul>
+            <p>To create a variable, specify the type and assign it a value:</p>
+            <pre><code>
+string name = "John";
+Console.WriteLine(name);
+</code></pre>
+        </section>
+        <section class="main-section" id=C#_Output>
+            <header>C# Output
+            </header>
+            <p>
+                To output values or print text in C#, you can use the WriteLine() method:
+            </p>
+            <pre><code>
+Console.WriteLine("Hello World!");</code></pre>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

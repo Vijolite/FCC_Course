@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <img id="header-img"
+            src="https://t3.ftcdn.net/jpg/04/02/26/08/360_F_402260890_fwcZfaaHqAhL7yWBe1ufDaaSy3EQEx3k.jpg">
+        <nav id="nav-bar">
+            <ul>
+
+                <li><a class=nav-link href=#clothes>Clothes</a></li>
+                <li><a class=nav-link href=#video>Accessories</a></li>
+                <li><a class=nav-link href=#delivery>Delivery</a>
+            </ul>
+            </li>
+
+        </nav>
+    </header>
+    <main>
+        <section id="clothes">
+            <ul>
+                <li>
+                    <h2>For women</h2>
+                    <p>Dresses, coats, trousers, blouses, swimming suits</p>
+                </li>
+                <li>
+                    <h2>For men</h2>
+                    <p>Shirts, coats, trousers, blouses, swimming suits</p>
+                </li>
+                <li>
+                    <h2>For children</h2>
+                    <p>Great selection of everything for boys and girls</p>
+                </li>
+            </ul>
+        </section>
+        <section id="video">
+            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=Ti_U2bIUCmM">
+            </iframe>
+        </section>
+        <section id="delivery">
+            <div class="delivery">
+                <h3>order less than £25</h3>
+                <p>You are paying for the 2nd class delivery according to Royal mail tarrif</p>
+            </div>
+            <div class="delivery">
+                <h3>order from£25 till £50</h3>
+                <p>You are paying £2 for the 1st class delivery</p>
+            </div>
+            <div class="delivery">
+                <h3>order from £50</h3>
+                <p>Free next day delivery - the best option!</p>
+            </div>
+
+        </section>
+        <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
+            <label>For more information
+                <input type=email id="email" placeholder="type your email here"></input>
+            </label>
+            <input type=submit id="submit" value="submit"></input>
+        </form>
+
+    </main>
+</body>
+
+</html>

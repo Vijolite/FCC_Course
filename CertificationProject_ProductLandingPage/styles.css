@@ -1,0 +1,100 @@
+#header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: lightgray;
+    width: 100%
+}
+
+#header-img {
+    width: 150px;
+    height: 70px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-bar ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 2px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.nav-link {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: lightblue;
+    color: blue;
+}
+
+.nav-link:hover {
+    background-color: blue;
+    color: lightblue;
+}
+
+#form {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: space-between;
+}
+
+#clothes,
+#video {
+    width: 60%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#delivery {
+    width: 90%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.delivery {
+    text-align: justify;
+    border: solid lightgray;
+    margin: 2px;
+}
+
+.delivery h3 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #delivery {
+        width: 90%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,45 @@
+#title {
+    color: blue;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-caption {
+    margin: 0;
+    font-size: 10px;
+    text-align: left;
+}
+
+#img-div {
+    border: 5px solid lightgray;
+    box-shadow: 5px 5px gray
+}
+
+#tribute-info {
+    font-size: 15px;
+    margin: 50px 0 50px 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 0 10px 0;
+    padding: 5px 0;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 17px;
+}

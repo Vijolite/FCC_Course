@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We are collecting your data without any particular purpose and reason, just to know more about
+        you</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Enter your name:
+            <input id="name" type="text" required placeholder="your name"></input>
+        </label>
+        <label for="email" id="email-label">Enter your email:
+            <input id="email" type="email" required placeholder="your email""></input>
+      </label>
+      <label for=" number" id="number-label">Enter your age:
+            <input id="number" type="number" min=10 max=100 placeholder="your age"></input>
+        </label>
+        <label for="dropdown">Who are you?
+            <select id="dropdown">
+                <option>Female</option>
+                <option>Male</option>
+                <option>Don't know</option>
+            </select>
+        </label>
+        <hr>
+        <legend>Where do you live?</legend>
+        <label for="placeEngland">
+            <input id="" placeEngland" type="radio" name="place" value=1 checked class="inline">England</input>
+        </label>
+        <label for="placeElsewhere">
+            <input id="placeElsewhere" type="radio" name="place" value=2 class="inline">Elsewhere</input>
+        </label>
+        <hr>
+        <legend>What do you like to do?</legend>
+        <label>
+            <input type="checkbox" name="hobby" value=1 class="inline">Sleep</input>
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value=2 class="inline">Read</input>
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value=3 class="inline">Play chess</input>
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value=4 class="inline">Play boardgames</input>
+        </label>
+        <hr>
+        <label for="comments">
+            Any additional comments
+            <textarea placeholder="Any additional info..." name="comments"></textarea>
+        </label>
+        <input type="submit" id="submit"></input>
+    </form>
+</body>
+
+</html>

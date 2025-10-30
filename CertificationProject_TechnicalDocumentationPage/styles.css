@@ -1,0 +1,65 @@
+header {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+pre {
+    border: solid lightgrey
+}
+
+@media (max-width: 768px) {
+    #main-doc {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    #main-doc {
+        width: 1000px;
+    }
+}
+
+nav {
+    position: fixed;
+    /* stays on the left even when scrolling */
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* full height */
+    width: 200px;
+    /* sidebar width */
+    background-color: lightgrey;
+    padding-top: 20px;
+}
+
+.nav-link {
+    display: block;
+    /* each link on its own line */
+    color: grey;
+    padding: 12px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#main-doc {
+    margin-left: 200px;
+    /* push content to the right of nav */
+    padding: 20px;
+}
+
+#main-doc * {
+    scroll-margin-left: 220px;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}

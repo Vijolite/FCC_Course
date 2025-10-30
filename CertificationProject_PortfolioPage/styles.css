@@ -1,0 +1,117 @@
+.welcome-section {
+    height: 1vp;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: lightblue;
+    width: 100%
+}
+
+main {
+    margin-top: 70px;
+    background: linear-gradient(190deg, lightgray, lightyellow, lightblue);
+    padding: none;
+}
+
+
+#navbar ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 2px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.nav-link {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: lightblue;
+    color: blue;
+}
+
+.nav-link:hover {
+    background-color: blue;
+    color: lightblue;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.project-tile {
+    width: 100%;
+    max-width: 270px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.project-tile img {
+    height: 90%;
+    max-width: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.project-tile a {
+    height: 10%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.project-tile a:hover {
+    background-color: blue;
+    color: lightblue;
+}
+
+.projects::after {
+    content: "";
+    width: 350px;
+}
+
+
+@media only screen and (max-width: 720px) {
+    #navbar ul {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    #navbar ul {
+        font-size: 15px;
+    }
+}
